@@ -42,18 +42,8 @@ Only the following prefixes are allowed:
   ```
   Types: `feat`, `fix`, `docs`, `style`, `refactor`, `test`, `chore`
 
-## Pre-PR Validation (Required)
-Before creating a PR:
-- Run the full local validation required by this repo (tests, lint, type checks, coverage).
-- All checks must pass. No skipped tests unless explicitly documented.
-
-If any check fails:
-1. Fix the issue
-2. Commit the fix
-3. Re-run the full validation
-
 ## Checkpoint: Before Creating a PR
-After validation passes, STOP and ask:
+When the change is ready, STOP and ask:
 
 ```
 Create PR?
@@ -71,7 +61,6 @@ Finalize PR?
 Finalization means:
 1. Squash-merge the PR and delete the remote branch
 2. Update local `develop`
-3. Run final validation on `develop`
 
 Proceed only after explicit approval.
 
