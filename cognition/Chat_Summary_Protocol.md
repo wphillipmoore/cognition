@@ -1,4 +1,4 @@
-# Chat Summary Protocol v1.0
+# Chat Summary Protocol v1.1
 
 **Status:** Normative  
 **Audience:** AI systems summarizing chat discussions for archival use  
@@ -64,6 +64,26 @@ It MUST include:
 Reasoning MUST be faithful to the discussion, not reconstructed.
 If reasoning is incomplete or implicit, the summary MUST state that.
 
+## 5.1 Implicit but Converged Decisions (Normative)
+
+In some discussions, outcomes are not stated as explicit decisions but are nonetheless
+clearly settled through repeated reasoning, reinforcement, or downstream actions.
+
+Summaries MAY record such outcomes as decisions **only if**:
+
+- The outcome is consistently supported by the Reasoning section
+- No competing option remains actively defended in the discussion
+- Subsequent actions or conclusions clearly depend on the outcome being true
+
+When included, these decisions MUST be explicitly labeled as **implicit** or
+**implicitly converged**, and the summary MUST NOT elevate them to the status of
+formally declared decisions.
+
+If a decision appears converged but supporting reasoning is weak, ambiguous, or
+one-sided, the summary MUST instead record it as an **open question**.
+
+Summaries MUST NOT invent convergence where none exists.
+
 ---
 
 ## 6. Options Not Chosen (Required)
@@ -127,4 +147,4 @@ Optional: Open Questions
 
 ---
 
-**End of Chat Summary Protocol v1.0**
+**End of Chat Summary Protocol v1.1**
