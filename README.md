@@ -4,7 +4,7 @@
 
 In keeping with its forward-looking nature, cognition has been replaced by something sturdier and more practical. Please visit its only surviving child:
 
-- **standards-and-conventions** (the repo that grew up and got a job)
+- **[standards-and-conventions](https://github.com/wphillipmoore/standards-and-conventions)** (the repo that grew up and got a job)
 
 cognition is survived by best intentions, a handful of useful lessons, and the realization that even AI-assisted plans should know when to refactor themselves.
 
